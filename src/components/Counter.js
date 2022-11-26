@@ -10,17 +10,24 @@ class Counter extends Component {
   }
 
   increment() {
-    this.setState({
-      count: this.state.count + 1,
-    });
+    this.setState(
+      {
+        count: this.state.count + 1,
+      },
+      () => {
+        console.log(`callback value`, this.state.count);
+      }
+    );
+    console.log(`sync value`, this.state.count);
   }
 
   render() {
     return (
-      <div>
-        Counter - {this.state.count}
+      <>
+        <div>Counter - {this.state.count}</div>
+        <br></br>
         <button onClick={() => this.increment()}>Increment</button>
-      </div>
+      </>
     );
   }
 }
