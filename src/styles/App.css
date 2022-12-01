@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 } */
-.App {
+/* .App {
   text-align: center;
   background-color: #282c34;
 }
@@ -74,4 +74,9 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+body {
+  display: flex;
+  justify-content: center;
 }
