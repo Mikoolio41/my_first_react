@@ -80,3 +80,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.divvi {
+  background-color: pink;
+}

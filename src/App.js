@@ -1,10 +1,13 @@
 import React from "react";
-import Form from "./exercises/components/Form";
+import Counter1 from "./components/Counter1";
+import PropDestructure from "./components/PropDestructure";
+import "./styles/App.css";
 
 function App() {
   return (
     <div>
-      <Form />
+      <Counter1 />
+      <PropDestructure name={"Yair"} city={"Miami"} age={18} />
     </div>
   );
 }
