@@ -5,9 +5,9 @@ const Car = (props) => {
   const checkCars = () => {
     if (chosenCar.length > 1) {
       return `Here are all the ${nameChosenCar} cars available in the shop`;
-    } else if (chosenCar.length == 1) {
+    } else if (chosenCar.length === 1) {
       return `Here is the only ${nameChosenCar} car available in the shop`;
-    } else if (chosenCar.length == 0) {
+    } else if (chosenCar.length === 0) {
       return `No ${nameChosenCar} car currently available in the shop`;
     }
   };
